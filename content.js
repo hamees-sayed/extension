@@ -1,4 +1,4 @@
-let submitButton = document.querySelector("#btn");
+const submitButton = document.querySelector("#btn");
 
 submitButton.addEventListener("click", function() {
   chrome.runtime.sendMessage({ action: "clap" });
