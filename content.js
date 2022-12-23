@@ -1,5 +1,5 @@
-var submitButton = document.querySelector("#btn");
+let submitButton = document.querySelector("#btn");
 
 submitButton.addEventListener("click", function() {
-  chrome.runtime.sendMessage({ action: "playSound" });
+  chrome.runtime.sendMessage({ action: "clap" });
 });

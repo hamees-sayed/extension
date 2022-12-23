@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  if (request.action === "playSound") {
-    var audio = new Audio("./cheer.wav");
+  if (request.action === "clap") {
+    let audio = new Audio("./clap.wav");
     audio.play();
   }
 });
