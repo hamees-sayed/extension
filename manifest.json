@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "LeetCode Cheer",
+  "description": "Plays a cheering sound when you submit an answer on LeetCode",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "background": {
+    "scripts": ["./background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["https://color-palette-2510.netlify.app/*"],
+    "js": ["./content.js"]
+  }],
+  "web_accessible_resources": ["./cheer.wav"]
+}
